@@ -25,4 +25,4 @@ const createAction = (type) => ({
   ACTION: (payload) => ({ type, payload }),
 });
 
-export { createActions, createAction };
+export { createTypes, createActions, createAction };
