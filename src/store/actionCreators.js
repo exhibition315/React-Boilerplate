@@ -1,13 +1,11 @@
-const createTypes = (type) => {
-  return {
-    INDEX: type,
-    INIT: `${type}_INIT`,
-    REQUESTED: `${type}_REQUESTED`,
-    SUCCEEDED: `${type}_SUCCEEDED`,
-    FAILED: `${type}_FAILED`,
-    CANCEL: `${type}_CANCEL`,
-  };
-};
+const createTypes = (type) => ({
+  INDEX: type,
+  INIT: `${type}_INIT`,
+  REQUESTED: `${type}_REQUESTED`,
+  SUCCEEDED: `${type}_SUCCEEDED`,
+  FAILED: `${type}_FAILED`,
+  CANCEL: `${type}_CANCEL`,
+});
 
 const createActions = (type) => {
   const types = createTypes(type);

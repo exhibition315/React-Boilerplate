@@ -15,7 +15,7 @@ module.exports = {
       {
         ssr: false,
         displayName: true,
-      }
+      },
     ],
     '@babel/plugin-syntax-dynamic-import',
     '@babel/plugin-proposal-optional-chaining',

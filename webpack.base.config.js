@@ -17,7 +17,7 @@ function resolve(dir) {
 module.exports = {
   context: __dirname,
   entry: {
-    'React-Boilerplate': resolve('src/index.js'),
+    'React-Boilerplate': resolve('src/index.jsx'),
   },
   output: {
     path: resolve('build'),
