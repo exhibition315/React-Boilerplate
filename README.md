@@ -11,3 +11,5 @@ A React with Saga Template
 * Styled-Component with Styled-System
 * ESlint
 * Prettier
+* Jest
+* Husky
