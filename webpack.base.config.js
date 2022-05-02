@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 const CompressionPlugin = require('compression-webpack-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 const APPLICATION_PHASE = process.env.APPLICATION_PHASE || 'PRODUCTION';
 // const IS_LOCAL = APPLICATION_PHASE === 'LOCAL';
@@ -26,9 +26,15 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.json', '.css', '.scss'],
     alias: {
-      '@': resolve('src'),
-      '@components': resolve('src/components'),
-      '@store': resolve('src/store'),
+      '@': resolve('./src'),
+      '@img': resolve('./assets/img'),
+      '@animation': resolve('./assets/animation'),
+      '@api': resolve('./src/api'),
+      '@common': resolve('./src/common'),
+      '@components': resolve('./src/components'),
+      '@hooks': resolve('./src/services/hooks'),
+      '@store': resolve('./src/store'),
+      '@utils': resolve('./src/services/utils'),
     },
   },
   module: {
